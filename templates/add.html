@@ -1,0 +1,19 @@
+{% include "header.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+</div>
+</section>
+    <div class="container">
+         <div class="adauga row">
+            <div class="col">
+
+                <h1>Adaugă o pisică</h1><br>
+
+                <!--  WTForm  -->
+                {{ wtf.quick_form(form, novalidate=True) }}
+
+            </div>
+        </div>
+    </div>
+
+{% include "footer.html" %}

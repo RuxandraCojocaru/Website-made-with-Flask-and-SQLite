@@ -1,0 +1,294 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Montserrat', sans-serif;
+font-weight: 900;
+}
+
+p {
+color: #8f8f8f;
+}
+
+
+
+/* Navigation Bar */
+
+.navbar {
+    padding: 0 0  4.5rem;
+}
+
+.navbar-brand {
+font-family: 'Ubuntu', sans-serif;
+font-size: 2.5rem ;
+font-weight: 500;
+}
+
+.nav-item{
+padding: 0 18px;
+}
+
+.nav-link{
+ font-size:1.4rem;
+}
+
+/*Buttons*/
+
+.download-button {
+margin: 5% 3% 5% 0%;
+}
+
+
+
+/*Containers*/
+
+.container-fluid {
+    padding: 3% 15%;
+}
+/* Sections */
+.header-section{
+ background-image: url('../assets/images/header1.jpg');
+ background-color: #ffb4a2;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+ color: black;
+}
+
+
+
+/* Title */
+.big-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height:1.5;
+    font-weight: 800;
+    color: white;
+}
+
+.title{
+text-align:left;
+}
+
+.fa-paw {
+color: orange;
+}
+
+
+/* Features */
+#features {
+padding: 50px 0px;
+}
+
+.features-text {
+color: #ffd6a5;
+}
+
+.icon{
+font-size:3.5rem;
+margin-bottom: 2rem;
+}
+
+.icon:hover {
+  color:#FF8303;
+}
+
+
+/*About*/
+
+.about-text {
+   font-size : 1.3vw;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+
+#about{
+background-image: url("https://images.unsplash.com/photo-1621978475524-7f76aae684b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+background-image: url("https://images.unsplash.com/photo-1634861233692-245193b22d3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+background-color: #cccccc;
+min-height:850px;
+background-position:top;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+bottom-margin: 20%;
+}
+
+#achievements{
+font-family: 'Montserrat', sans-serif;
+font-size: 2.5rem;
+line-height:1;
+font-weight: 600;
+color:white;
+margin-left:70%;
+margin-top: 7%;
+}
+
+#achievements li {
+text-align:left;
+padding: 5%;
+list-style-type: none;
+}
+
+@media only screen and (max-width: 1500px) {
+    #achievements {
+        display: none;
+    }
+}
+
+
+/* Carusel */
+
+.colored-section{
+ background-image: url("https://images.unsplash.com/photo-1585335677963-d94a1cf9e0ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+ background-image: linear-gradient(#FE7E6D,#F9D371);
+ min-height:450px;
+ background-position: bottom;
+
+background-repeat: no-repeat;
+background-size: cover;
+ color: white;
+}
+
+.testimonial-image{
+width:40%;
+height:60%;
+border-radius: 100%;
+margin: 20px;
+}
+
+.testimonial-text {
+font-size: 3 rem;
+line-height: 1.5;
+}
+
+/* css media query */
+@media (max-width: 992px) { /*ca sa ocupe mai mult din ecran cand ecranul e mic */
+.testimonial-image{
+width:100%;
+height:100%;
+}
+}
+
+
+
+/* Footer */
+.footer-icon{
+font-size:2.5rem;
+margin: 0rem 1rem 1rem;
+color:black;
+}
+
+.contact{
+height:20%;
+}
+
+
+/* Add */
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.adauga {
+  padding: 2rem 0;
+}
+
+
+/* Cards*/
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.adopt_button {
+width: 150px;
+}
+
+/* css media query */
+@media (max-width: 992px) { /*ca sa fixam inaltimea pozei mai mare cand ecranul e mai mic */
+.card-img-top {
+    width: 100%;
+    height: 40vw;
+    object-fit: scale-down;
+}
+}
+
+
+/* Presentation*/
+
+.presentation-img {
+object-fit: scale-down;
+padding-top: 3%;
+}
+
+.cat-row{
+width:100%;
+}
+
+
+.presentation-card{
+background-color: #FFE1AF;
+}
+
+.list-group-item {
+background-color: #FFE1AF;
+}
+
+/* css media query */
+@media (max-width: 992px) {
+.form-adoptie{
+margin-top: 9%;
+}
+}
+
+/* css media query */
+@media (min-width: 992px) { /*ca sa gatim tabelul */
+
+.padding-right-0{
+    padding-right:0;
+}
+
+.padding-left-0{
+    padding-left:0;
+}
+.list-group-item{
+height: 70px;
+}
+}
+
+
+
+
+/* Search Page*/
+.start-cats{
+top-margin: 20%;
+}
+
+#filter{
+    display: none;
+}
+
+#filter-button {
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+#submit {
+ background-color: #FF8303 !important;
+    border-color: ##FF8303 !important;
+    color: #fff !important;
+
+}
+
+.start-cats{
+ margin-top: 3%;
+}

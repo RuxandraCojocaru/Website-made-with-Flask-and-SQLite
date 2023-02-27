@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/static/assets/images/favicon.ico">
+
+    <title>CatVille</title>
+
+    <!--CSS Stylesheets-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+     <link rel="stylesheet" href="../static/css/styles.css">
+
+    <!-- Font Awesome-->
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
+    <!--Bootstrap Scripts-->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <section class="header-section" id="title">
+        <div class="container-fluid">
+
+             <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg  navbar-dark ">
+              <a class="navbar-brand" href="{{ url_for('home') }}"> <i class="fas fa-paw"></i>  CatVille</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('home') }}">Acasă </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('home') }}#about">Despre noi</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+              </div>
+            </nav>
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+</div>
+</section>
+
+<section>
+  <div class="container-fluid content-row">
+    <h3 class="mb-4 "> Caută pisica potrivită pentru tine!</h3>
+      <button onclick="showHide()" id="filter-button" class="btn btn-danger btn-lg">Filtrează</button>
+        <div class="filter-form" id="filter">
+            {{ wtf.quick_form(form, novalidate=True) }}
+        </div>
+
+        <script type="text/javascript">
+        const filter = document.getElementById("filter");
+        const filterButton = document.getElementById("filter-button");
+
+        function showHide () {
+        if (filter.style.display == "none" || filter.style.display == "") {
+            filter.style.display = "block";
+            } else {
+             filter.style.display = "none";
+            }
+        };
+        </script>
+
+
+    <div class="start-cats">
+    <div class="row ">
+      {% for cat in cats: %}
+        <div class="col-lg-4  col-sm-12 mb-4 ">
+            <!--CARD HERE-->
+          <div class="card h-100 border-warning">
+              <img src=" {{  cat['img_url'] }} " class="card-img-top " alt="Card Image">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">{{ cat['name'] }}</h5>
+                <p class="card-text">{{ cat['location'] }} </p>
+                <p class="card-text">{{ cat['age_status'] }} </p>
+                <p class="card-text">{{ cat['sex'] }} </p>
+
+                <div class=" mt-auto">
+                    <a href="{{url_for('presentation', cat_id=cat.id)}}" class="btn  btn-warning adopt_button  ">Detalii</a>
+                </div>
+              </div>
+         </div>
+        </div>
+      {%endfor%}
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+{% include "footer.html" %}

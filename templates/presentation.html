@@ -1,0 +1,65 @@
+{% include "header.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+</div>
+</section>
+
+
+<section class="container-fluid ">
+
+    {% if cat['sex'] == 'Mascul': %}
+                <h1 class="mb-5">Adoptă-l pe {{cat['name']}}! </h1>
+    {% else: %}
+                <h1 class="mb-5">Adopt-o pe {{cat['name']}}! </h1>
+    {% endif %}
+
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 ">
+            <div class="h-100">
+                <div class="d-flex flex-column">
+                    <div class="card presentation-card " >
+                      <img class="card-img-top presentation-img" src="{{cat['img_url']}}" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">{{cat['name']}}</h5>
+                        <p class="card-text">{{cat['description']}}</p>
+                      </div>
+                      <ul class="list-group list-group-flush ">
+                          <div class="row ">
+                              <div class="col-lg-6 padding-right-0  ">
+                                          <li class="list-group-item ">{{cat['age_status']}}</li>
+                                          <li class="list-group-item ">{{cat['sex']}}</li>
+                                          <li class="list-group-item ">{{cat['pedigree']}}</li>
+                                          <li class="list-group-item ">{{cat['color']}}</li>
+                              </div>
+                              <div class="col-lg-6 padding-left-0 ">
+                                        <li class="list-group-item ">{{cat['location']}}</li>
+                                        <li class="list-group-item">{{cat['telephone']}}</li>
+                                        <li class="list-group-item ">{{cat['email']}}</li>
+                                        <li class="list-group-item">{{cat['post_date']}}</li>
+                              </div>
+                          </div>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="col-sm-12 col-md-12 col-lg-6 text-center form-adoptie ">
+            <div class="h-100 border-warning">
+                <div class="d-flex flex-column ">
+                    {{ wtf.quick_form(form, novalidate=True) }}
+                </div>
+            </div>
+         </div>
+
+
+        <div class="col-sm-12 col-md-12 col-lg-12 mt-5">
+            <img class="cat-row" src="../static/assets/images/1.png">
+        </div>
+    </div>
+
+
+</section>
+
+
+
+{% include "footer.html" %}

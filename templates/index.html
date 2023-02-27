@@ -1,0 +1,111 @@
+{% include "header.html" %}
+              <!-- Title -->
+            <div class="row">
+
+                <div class="col-lg-6 title">
+                  <h1 class="big-heading">Ajută-le să își găsească o casă!</h1>
+
+                  <a class="btn  btn-lg btn-dark download-button" href="{{url_for('search')}}" role="button"><i class="fas fa-hand-holding-heart"></i> Adoptă</a>
+                  <a class="btn  btn-lg btn-warning download-button" href="{{url_for('add')}}" role="button"> <i class="fas fa-cat"></i> Adaugă</a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features -->
+  <section class="white-section" id="features">
+    <div class="container-fluid">
+        <div class="row features-text">
+
+            <div class="feature-box col-lg-3 ">
+              <i class="icon fas fa-search"></i>
+              <h3 class="feature-title">Căutare </h3>
+              <p >Găsește pisica potrivită pentru tine!</p>
+            </div>
+
+            <div class="feature-box col-lg-3 ">
+              <i class="icon fas fa-file-alt"></i>
+              <h3 class="feature-title">Cerere</h3>
+              <p >Completează formularul de adopție.</p>
+            </div>
+
+            <div class="feature-box col-lg-3 ">
+              <i class="icon fas fa-home"></i>
+              <h3 class="feature-title">Adopție </h3>
+              <p >Ia-ți pisica acasă!</p>
+            </div>
+
+            <div class="feature-box col-lg-3 ">
+              <i class="icon fas fa-heart" ></i>
+              <h3 class="feature-title">Adaugă pisică</h3>
+              <p >Daca ai găsit o pisică, aici poți să îi oferi un nou cămin!</p>
+            </div>
+
+        </div>
+    </div>
+  </section>
+
+
+
+  <!-- About us-->
+    <section  id="about">
+        <div class="container-fluid">
+                <div >
+                    <div class="about-text">
+                         <div>
+                             <h1 class="big-heading" >Noi suntem familia CatVille!</h1>
+                             <h3>Bine ai venit!</h3>
+                         </div>
+                        <h3 >Am înființat organizația CatVille în 2021 pentru a ajuta pisicile să își găsească un nou cămin. Până în prezent am intermediat adopția a peste 300 de pisici.</h3>
+                    </div>
+                </div>
+            <div id="achievements">
+                <ul class="big-text">
+                    <li><i class="fas fa-eye"></i> 1000 vizualizări zilnice</li>
+                    <li><i class="fas fa-piggy-bank"></i> Vindem pisici ....gratis </li>
+                    <li><i class="fas fa-user-secret"></i> ....și în siguranță! </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Carousel -->
+
+  <section class="colored-section" id="testimonials">
+          <div id="testimonial-carusel" class="carousel slide" data-ride="false" >
+              <div class="carousel-inner">
+                <div class="carousel-item  container-fluid" >
+                      <h2 class="testimonial-text">Sunt fericit că l-am găsit pe Rincky. Mulțumesc!</h2>
+                      <img class="testimonial-image" src="../static/assets/images/cats.jpg" alt="cat-profile" >
+                      <br><em>Mihai Crețu</em>
+                </div>
+
+                <div class="carousel-item container-fluid" >
+                    <h2 class="testimonial-text">Băiețelul meu blănos a crescut mare! Mereu recunoscătoare...</h2>
+                    <img class="testimonial-image" src="../static/assets/images/ladywithcat.jpg" alt="cat-profile">
+                    <br><em>Miranda Giuvica</em>
+                </div>
+
+                  <div class="carousel-item active container-fluid" >
+                      <h2 class="testimonial-text">Am adoptat ca să ajut, dar m-a ajutat Grigore pe mine.</h2>
+                      <img class="testimonial-image" src="https://images.unsplash.com/photo-1531853749260-4447dc77f7e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" alt="cat-profile" >
+                      <br><em>Delia Rotaru</em>
+                </div>
+              </div>
+
+              <a class="carousel-control-prev" href="#testimonial-carusel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+
+              <a class="carousel-control-next" href="#testimonial-carusel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" ></span>
+              </a>
+          </div>
+  </section>
+
+{% include "footer.html" %}
