@@ -30,7 +30,7 @@ https://user-images.githubusercontent.com/101098099/221697890-f5b43009-abd7-435a
 https://user-images.githubusercontent.com/101098099/221697978-58fe17a3-fe03-41cc-8e6e-739b3fcfc11f.mp4
 
 
-# FlaskForm - adding a new cat to the database and directly onto the site
+# FlaskForm - adding a new cat to the database and site
 
 
 
