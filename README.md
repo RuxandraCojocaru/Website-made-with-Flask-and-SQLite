@@ -10,3 +10,12 @@ The site is dedicated to facilitating cat adoptions.
 + <strong>Bootstrap: </strong> The site is responsive due to the use of Bootstrap classes.
 + <strong>SQLite: </strong> Data introduced by users remains stacked in a database, to be accessed once again when the session restarts.
 + <strong>smtplib: </strong> In order to send messages of to-be-owners to the people who are putting the cats towards adoption, real email messages will be sent at the address given in the forms, using the library smtplib.
+
+## How it works:
+# main.py
+This is the file that sets the site in motion. I started by creating the Flask, Bootstrap and SQLAlchemy objects. Using FlaskForm, I created classes that will constitute my AddForm, AdoptionForm and the Filter, which will give shape to the forms on the site. I also created a table object named Pisica, whih will hold my cats for me in the database.
+
+Using @app.route I tell Flask what routes can be followed on my website. A route like '/search' will redirect the user to the template search.html. At the beginning, however, the site will start at its home root, which makes use of the index.html.
+
+# index html
+This is the main page. The header and footer are included as templates, while the rest of the html structure is hardcoded. This page consists of a title, buttons towards the 'Adopta' and "Adauga" buttons and a 
