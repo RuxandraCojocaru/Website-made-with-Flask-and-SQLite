@@ -19,3 +19,6 @@ Using @app.route I tell Flask what routes can be followed on my website. A route
 
 # index html
 This is the main page. The header and footer are included as templates, while the rest of the html structure is hardcoded. This page consists of a title, buttons towards the 'Adopta' and 'Adauga' pages, a 'features' section, an 'about us' section and a carousel with images.
+
+https://user-images.githubusercontent.com/101098099/221690986-64983275-db88-4fde-ab79-bb68d5c84626.mp4
+
