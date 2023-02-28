@@ -32,6 +32,7 @@ This page is accessed through the 'Adopta' button. Besides the header, it contai
 </p>
 
 <br/>
+
 # presentation.html
 If a user decides to click on the 'Detalii" button assigned to each cat in the search page, then the route '/presentation' is followed. The cat's id in the database is passed on in this scope to the function presentation() from main.py, which takes care of activating the presentation template. This is the presentation.html file. Here, an already defined structure waits to be filled with information about the given cat. A WTForm  is also set to the right in order to give the user the chance to contact the temporary user of the cat, giving information about himself. Finally, the information submitted will be messaged via email to the owner.
 
