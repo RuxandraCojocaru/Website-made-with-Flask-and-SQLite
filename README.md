@@ -32,10 +32,12 @@ This page is accessed through the 'Adopta' button. Besides the header, it contai
 
 # presentation.html
 If a user decides to click on the 'Detalii" button assigned to each cat in the search page, then the route '/presentation' is followed. The cat's id in the database is passed on in this scope to the function presentation() from main.py, which takes care of activating the presentation template. This is the presentation.html file. Here, an already defined structure waits to be filled with information about the given cat. A WTForm  is also set to the right in order to give the user the chance to contact the temporary user of the cat, giving information about himself. Finally, the information submitted will be messaged via email to the owner.
+
 https://user-images.githubusercontent.com/101098099/221697978-58fe17a3-fe03-41cc-8e6e-739b3fcfc11f.mp4
 
 
 # add.html: WTForm - adding a new cat to the database and site
 Another use of the WTForms is made in the add.html file, which corresponds to the '/add' route accessible through the 'Adauga' button visible on the home page. The page is very simply and elegantly laid out, asking the user to input the name, age, sex, color, species, and location of the cat, as well as a photo and description, plus contact information. The form returns the information to the add() function in main.py, where it is validated and immediately inserted into the database and onto the site.
+
 https://user-images.githubusercontent.com/101098099/221697890-f5b43009-abd7-435a-a77c-854460f22e65.mp4
 
