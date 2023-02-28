@@ -25,7 +25,9 @@ https://user-images.githubusercontent.com/101098099/221690986-64983275-db88-4fde
 # search.html
 This page is accessed through the 'Adopta' button. Besides the header, it contains a 'Filter' button, which shows the three criteria for filtering cats in the database (location, age and color) upon being pressed. Below the area dedicated to the filter, rows of cards are automatically populated with information about cats extracted directly from the database. The cats variable stocks the selected cat objects, and with the help of a for structure multiple cards are populated dynamically.
 
-![search_page](https://user-images.githubusercontent.com/101098099/221889947-2e1a2e07-06f4-4a41-a9b9-461abd2c8ab2.gif)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/101098099/221889947-2e1a2e07-06f4-4a41-a9b9-461abd2c8ab2.gif">
+</p>
 
 
 # presentation.html
