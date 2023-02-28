@@ -18,12 +18,14 @@ This is the file that sets the site in motion. I started by creating the Flask, 
 Using @app.route I tell Flask what routes can be followed on my website. A route like '/search' will redirect the user to the template search.html. At the beginning, however, the site will start at its home root, which makes use of the index.html.
 
 <br/>
+
 # index html
 This is the main page. The header and footer are included as templates, while the rest of the html structure is hardcoded. This page consists of a title, buttons towards the 'Adopta' and 'Adauga' pages, a 'features' section, an 'about us' section and a carousel with images.
 
 https://user-images.githubusercontent.com/101098099/221690986-64983275-db88-4fde-ab79-bb68d5c84626.mp4
 
 <br/>
+
 # search.html
 This page is accessed through the 'Adopta' button. Besides the header, it contains a 'Filter' button, which shows the three criteria for filtering cats in the database (location, age and color) upon being pressed. Below the area dedicated to the filter, rows of cards are automatically populated with information about cats extracted directly from the database. The cats variable stocks the selected cat objects, and with the help of a for structure multiple cards are populated dynamically.
 
@@ -39,6 +41,7 @@ If a user decides to click on the 'Detalii" button assigned to each cat in the s
 https://user-images.githubusercontent.com/101098099/221697978-58fe17a3-fe03-41cc-8e6e-739b3fcfc11f.mp4
 
 <br/>
+
 # add.html: WTForm - adding a new cat to the database and site
 Another use of the WTForms is made in the add.html file, which corresponds to the '/add' route accessible through the 'Adauga' button visible on the home page. The page is very simply and elegantly laid out, asking the user to input the name, age, sex, color, species, and location of the cat, as well as a photo and description, plus contact information. The form returns the information to the add() function in main.py, where it is validated and immediately inserted into the database and onto the site.
 
