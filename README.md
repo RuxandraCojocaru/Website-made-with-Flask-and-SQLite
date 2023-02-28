@@ -27,11 +27,11 @@ This page is accessed through the 'Adopta' button. Besides the header, it contai
 
 <br>
 ![search_page](https://user-images.githubusercontent.com/101098099/221889947-2e1a2e07-06f4-4a41-a9b9-461abd2c8ab2.gif)
-https://user-images.githubusercontent.com/101098099/221697890-f5b43009-abd7-435a-a77c-854460f22e65.mp4
+
 
 # presentation.html
 https://user-images.githubusercontent.com/101098099/221697978-58fe17a3-fe03-41cc-8e6e-739b3fcfc11f.mp4
-
+https://user-images.githubusercontent.com/101098099/221697890-f5b43009-abd7-435a-a77c-854460f22e65.mp4
 
 # FlaskForm - adding a new cat to the database and site
 
