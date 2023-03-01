@@ -14,7 +14,8 @@ The site is dedicated to facilitating cat adoptions.
 ## How it works:
 
 
-https://user-images.githubusercontent.com/101098099/222118437-fa8fb935-5237-4b93-829e-0b5a15584433.mp4
+https://user-images.githubusercontent.com/101098099/222120285-f73b34b4-3ad6-4fbe-9fa9-9f3a3f7f5136.mp4
+
 
 
 ## main.py
