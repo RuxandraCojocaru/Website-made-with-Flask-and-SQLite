@@ -41,8 +41,6 @@ class AdoptionForm(FlaskForm):
     submit = SubmitField('Trimitere cerere')
 
 
-#['', 'alb', 'negru', 'portocaliu', 'maro', 'gri', 'alb cu negru', 'portocaliu cu alb', 'multicolor'])
-
 class Filtru(FlaskForm):
     location = StringField("Locatie")
     age_status = SelectField("Maturitate", choices=['', 'Pui (sub 1 an)','Adult (1-10 ani)','Bătrână (10+)'])
@@ -108,7 +106,6 @@ def search():
     print(cat_filter)
 
     if cat_filter.is_submitted():
-        print("am intrat oleee")
         color = cat_filter.color.data
         age = cat_filter.age_status.data
         loc = cat_filter.location.data
