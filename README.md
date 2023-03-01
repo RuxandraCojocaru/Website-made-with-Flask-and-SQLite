@@ -12,6 +12,11 @@ The site is dedicated to facilitating cat adoptions.
 + <strong>smtplib: </strong> In order to send messages of to-be-owners to the people who are putting the cats towards adoption, real email messages will be sent at the address given in the forms, using the library smtplib.
 
 ## How it works:
+
+
+https://user-images.githubusercontent.com/101098099/222118437-fa8fb935-5237-4b93-829e-0b5a15584433.mp4
+
+
 ## main.py
 This is the file that sets the site in motion. I started by creating the Flask, Bootstrap and SQLAlchemy objects. Using FlaskForm, I created classes that will constitute my AddForm, AdoptionForm and the Filter, which will give shape to the forms on the site. I also created a table object named Pisica, which will store cats  in the database.
 
@@ -27,14 +32,10 @@ This is the main page. The header and footer are included as templates, while th
 ## search.html
 This page is accessed through the 'Adopta' button. Besides the header, it contains a 'Filter' button, which shows the three criteria for filtering cats in the database (location, age and color) upon being pressed. Below the area dedicated to the filter, rows of cards are automatically populated with information about cats extracted directly from the database. The cats variable stocks the selected cat objects, and with the help of a for structure multiple cards are populated dynamically.
 
-https://user-images.githubusercontent.com/101098099/221697890-f5b43009-abd7-435a-a77c-854460f22e65.mp4
-
 <br/>
 
 ## presentation.html
 If a user decides to click on the 'Detalii" button assigned to each cat in the search page, then the route '/presentation' is followed. The cat's id in the database is passed on in this scope to the function presentation() from main.py, which takes care of activating the presentation template. This is the presentation.html file. Here, an already defined structure waits to be filled with information about the given cat. A WTForm  is also set to the right in order to give the user the chance to contact the temporary user of the cat, giving information about himself. Finally, the information submitted will be messaged via email to the owner.
-
-
 
 <br/>
 
